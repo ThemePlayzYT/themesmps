@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b10" />
+    <title>Minecraft Player Login | ThemeSMP</title>
+    <meta name="description" content="Set up your ThemeSMP player profile with your Minecraft username." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="stylesheet" href="/styles.css?v=theme-20261007-copy" />
+    <script src="/script.js?v=theme-20261007-copy" defer></script>
+  </head>
+  <body>
+    <header class="topbar"><div class="container navbar"></div></header>
+    <main>
+      <section class="page-heading container">
+        <span class="eyebrow">PLAYER PROFILE</span>
+        <h1>Minecraft login</h1>
+        <p>Continue with your Minecraft username.</p>
+      </section>
+      <section class="section container">
+        <div class="login-panel">
+          <form data-login-form>
+            <label class="eyebrow" for="username">Minecraft Username</label>
+            <input id="username" name="username" type="text" placeholder="YourMinecraftName" minlength="3" maxlength="16" autocomplete="username" required />
+            <p class="login-disclaimer">This saves a local player profile on this device; it does not authenticate account ownership. Never enter your Minecraft or Microsoft password here.</p>
+            <p class="login-message" data-login-message role="status" aria-live="polite"></p>
+            <button class="button button-gold" type="submit">Login to account</button>
+          </form>
+          <section class="login-profile" data-login-profile hidden aria-live="polite">
+            <img class="profile-head" src="/public/assets/staff/Steve.png" alt="" data-profile-head />
+            <span class="eyebrow">Player profile</span>
+            <h2 data-profile-name></h2>
+            <p data-profile-message></p>
+            <button class="button button-outline" type="button" data-profile-logout>Logout</button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"></div></footer>
+  </body>
+</html>
